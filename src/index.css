@@ -1,5 +1,10 @@
 @import "tailwindcss";
+@config "../tailwind.config.js";
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white dark:bg-gray-900 transition-colors duration-200;
 }

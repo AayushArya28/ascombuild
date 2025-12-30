@@ -10,7 +10,7 @@ import Clients from "../components/home/Clients";
 
 const Home = () => {
   return (
-    <div className="font-sans text-gray-900 antialiased">
+    <div className="font-sans text-gray-900 dark:text-gray-100 antialiased bg-white dark:bg-gray-900 transition-colors duration-200">
       <Hero />
       <AboutUs />
       <MarketServed />

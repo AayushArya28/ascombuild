@@ -12,9 +12,9 @@ const clients = [
 
 const Clients = () => {
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12 bg-white dark:bg-gray-900 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8">
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
           Meet Our Clients
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">

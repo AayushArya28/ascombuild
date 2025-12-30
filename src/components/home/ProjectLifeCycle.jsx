@@ -25,7 +25,7 @@ const steps = [
 
 const ProjectLifeCycle = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white dark:bg-gray-900 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Graphic Side */}
@@ -36,7 +36,7 @@ const ProjectLifeCycle = () => {
                 {steps.map((step, index) => (
                   <div
                     key={index}
-                    className="flex items-center p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                    className="flex items-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow"
                   >
                     <div className="shrink-0 p-3 bg-blue-100 rounded-full mr-4">
                       <svg
@@ -53,7 +53,7 @@ const ProjectLifeCycle = () => {
                         ></path>
                       </svg>
                     </div>
-                    <h3 className="text-lg font-medium text-gray-900">
+                    <h3 className="text-lg font-medium text-gray-900 dark:text-white">
                       {step.title}
                     </h3>
                   </div>
@@ -64,7 +64,7 @@ const ProjectLifeCycle = () => {
 
           {/* Text Side */}
           <div className="w-full md:w-1/2 md:pl-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
               Project Life Cycle
             </h2>
             <ul className="space-y-4">
@@ -72,7 +72,7 @@ const ProjectLifeCycle = () => {
                 <span className="shrink-0 h-6 w-6 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-bold text-sm mr-3">
                   1
                 </span>
-                <span className="text-gray-700">
+                <span className="text-gray-700 dark:text-gray-300">
                   Detailed Site Inspection & Assessment
                 </span>
               </li>
@@ -80,7 +80,7 @@ const ProjectLifeCycle = () => {
                 <span className="shrink-0 h-6 w-6 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-bold text-sm mr-3">
                   2
                 </span>
-                <span className="text-gray-700">
+                <span className="text-gray-700 dark:text-gray-300">
                   Non-Destructive Testing & Analysis
                 </span>
               </li>
@@ -88,7 +88,7 @@ const ProjectLifeCycle = () => {
                 <span className="shrink-0 h-6 w-6 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-bold text-sm mr-3">
                   3
                 </span>
-                <span className="text-gray-700">
+                <span className="text-gray-700 dark:text-gray-300">
                   Structural Maintenance & Monitoring
                 </span>
               </li>
@@ -96,7 +96,7 @@ const ProjectLifeCycle = () => {
                 <span className="shrink-0 h-6 w-6 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-bold text-sm mr-3">
                   4
                 </span>
-                <span className="text-gray-700">
+                <span className="text-gray-700 dark:text-gray-300">
                   Corrective Measures & Rehabilitation
                 </span>
               </li>
@@ -104,7 +104,9 @@ const ProjectLifeCycle = () => {
                 <span className="shrink-0 h-6 w-6 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-bold text-sm mr-3">
                   5
                 </span>
-                <span className="text-gray-700">Final Delivery & Handover</span>
+                <span className="text-gray-700 dark:text-gray-300">
+                  Final Delivery & Handover
+                </span>
               </li>
             </ul>
             <div className="mt-8">

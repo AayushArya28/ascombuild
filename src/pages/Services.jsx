@@ -22,7 +22,7 @@ const servicesList = [
 
 const Services = () => {
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <div className="bg-gray-50 dark:bg-gray-900 min-h-screen transition-colors duration-200">
       {/* Hero Section */}
       <div className="bg-blue-900 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -40,20 +40,20 @@ const Services = () => {
           {servicesList.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100 flex flex-col"
+              className="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100 dark:border-gray-700 flex flex-col"
             >
               <div className="p-6 grow">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                   {service}
                 </h3>
-                <p className="text-gray-500 mb-4">
+                <p className="text-gray-500 dark:text-gray-300 mb-4">
                   Expert solutions for {service.toLowerCase()}.
                 </p>
               </div>
-              <div className="bg-gray-50 px-6 py-4 border-t border-gray-100">
+              <div className="bg-gray-50 dark:bg-gray-900 px-6 py-4 border-t border-gray-100 dark:border-gray-700">
                 <a
                   href="#"
-                  className="text-blue-600 hover:text-blue-800 font-medium text-sm flex items-center"
+                  className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium text-sm flex items-center"
                 >
                   Read more &rarr;
                 </a>
@@ -64,11 +64,11 @@ const Services = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-white border-t border-gray-200">
+      <div className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
             <span className="block">Need a specialized service?</span>
-            <span className="block text-blue-600">
+            <span className="block text-blue-600 dark:text-blue-400">
               Contact our experts today.
             </span>
           </h2>

@@ -202,7 +202,7 @@ const clientsData = {
 
 const Clients = () => {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white dark:bg-gray-900 min-h-screen transition-colors duration-200">
       {/* Hero Section */}
       <div className="bg-blue-900 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -219,16 +219,18 @@ const Clients = () => {
         <div className="space-y-12">
           {Object.entries(clientsData).map(([category, clients], index) => (
             <div key={index}>
-              <h2 className="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-2 mb-4">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-700 pb-2 mb-4">
                 {category}
               </h2>
               <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {clients.map((client, clientIndex) => (
                   <li
                     key={clientIndex}
-                    className="text-gray-600 flex items-start"
+                    className="text-gray-600 dark:text-gray-400 flex items-start"
                   >
-                    <span className="text-blue-500 mr-2">•</span>
+                    <span className="text-blue-500 dark:text-blue-400 mr-2">
+                      •
+                    </span>
                     {client}
                   </li>
                 ))}

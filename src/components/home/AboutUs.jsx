@@ -2,27 +2,27 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white dark:bg-gray-900 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-6 relative inline-block">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6 relative inline-block">
               About Us
               <span className="absolute bottom-0 left-0 w-1/2 h-1 bg-blue-600"></span>
             </h2>
-            <p className="text-lg text-gray-600 mb-4">
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
               Samrachana is a leading construction and infrastructure company,
               dedicated to building the foundations of tomorrow. With decades of
               experience, we specialize in large-scale projects including
               bridges, highways, and industrial complexes.
             </p>
-            <p className="text-lg text-gray-600 mb-6">
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
               Our team of expert engineers and project managers ensures quality,
               safety, and timely delivery for every project we undertake.
             </p>
             <ul className="space-y-3 mb-8">
-              <li className="flex items-center text-gray-700">
+              <li className="flex items-center text-gray-700 dark:text-gray-300">
                 <svg
                   className="h-5 w-5 text-green-500 mr-2"
                   fill="none"
@@ -38,7 +38,7 @@ const AboutUs = () => {
                 </svg>
                 Structural Health Monitoring
               </li>
-              <li className="flex items-center text-gray-700">
+              <li className="flex items-center text-gray-700 dark:text-gray-300">
                 <svg
                   className="h-5 w-5 text-green-500 mr-2"
                   fill="none"
@@ -54,7 +54,7 @@ const AboutUs = () => {
                 </svg>
                 Construction & Project Management
               </li>
-              <li className="flex items-center text-gray-700">
+              <li className="flex items-center text-gray-700 dark:text-gray-300">
                 <svg
                   className="h-5 w-5 text-green-500 mr-2"
                   fill="none"

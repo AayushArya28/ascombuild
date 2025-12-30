@@ -21,7 +21,7 @@ const projectCategories = [
 
 const Projects = () => {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white dark:bg-gray-900 min-h-screen transition-colors duration-200">
       {/* Hero Section */}
       <div className="bg-blue-900 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -39,11 +39,11 @@ const Projects = () => {
           {projectCategories.map((category, index) => (
             <div
               key={index}
-              className="group relative bg-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 aspect-video flex items-center justify-center cursor-pointer"
+              className="group relative bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 aspect-video flex items-center justify-center cursor-pointer"
             >
               <div className="absolute inset-0 bg-blue-900 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
               <div className="text-center p-4 z-10">
-                <h3 className="text-lg font-bold text-gray-800 group-hover:text-blue-700 transition-colors">
+                <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">
                   {category}
                 </h3>
               </div>

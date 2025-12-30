@@ -35,9 +35,9 @@ const videos = [
 
 const SocialMedia = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8">
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
           Our Social Media
         </h2>
         <div className="mb-6">
@@ -67,7 +67,10 @@ const SocialMedia = () => {
           </div>
         </div>
         <div className="text-center mt-8">
-          <a href="#" className="text-blue-600 hover:text-blue-800 font-medium">
+          <a
+            href="#"
+            className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium"
+          >
             View more on our channel &rarr;
           </a>
         </div>

@@ -2,19 +2,19 @@ import React from "react";
 
 const Stats = () => {
   return (
-    <section className="py-12 bg-white border-t border-gray-100">
+    <section className="py-12 bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-700 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold text-gray-900">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
             Samrachana at a Glance
           </h2>
-          <p className="text-gray-500 mt-2">
+          <p className="text-gray-500 dark:text-gray-400 mt-2">
             Delivering quality infrastructure since our inception.
           </p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div className="text-center p-6 bg-white rounded-lg shadow-sm border border-gray-100">
+          <div className="text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
             <div className="text-red-500 mb-2 flex justify-center">
               <svg
                 className="w-10 h-10"
@@ -31,9 +31,11 @@ const Stats = () => {
               </svg>
             </div>
             <h3 className="text-4xl font-bold text-red-600">21+</h3>
-            <p className="text-sm text-gray-600 mt-1">Years of Experience</p>
+            <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+              Years of Experience
+            </p>
           </div>
-          <div className="text-center p-6 bg-white rounded-lg shadow-sm border border-gray-100">
+          <div className="text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
             <div className="text-red-500 mb-2 flex justify-center">
               <svg
                 className="w-10 h-10"
@@ -50,9 +52,11 @@ const Stats = () => {
               </svg>
             </div>
             <h3 className="text-4xl font-bold text-red-600">2,500+</h3>
-            <p className="text-sm text-gray-600 mt-1">Projects Completed</p>
+            <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+              Projects Completed
+            </p>
           </div>
-          <div className="text-center p-6 bg-white rounded-lg shadow-sm border border-gray-100">
+          <div className="text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
             <div className="text-red-500 mb-2 flex justify-center">
               <svg
                 className="w-10 h-10"
@@ -69,9 +73,11 @@ const Stats = () => {
               </svg>
             </div>
             <h3 className="text-4xl font-bold text-red-600">25+</h3>
-            <p className="text-sm text-gray-600 mt-1">Awards</p>
+            <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+              Awards
+            </p>
           </div>
-          <div className="text-center p-6 bg-white rounded-lg shadow-sm border border-gray-100">
+          <div className="text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
             <div className="text-red-500 mb-2 flex justify-center">
               <svg
                 className="w-10 h-10"
@@ -88,7 +94,9 @@ const Stats = () => {
               </svg>
             </div>
             <h3 className="text-4xl font-bold text-red-600">100+</h3>
-            <p className="text-sm text-gray-600 mt-1">Team Members</p>
+            <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+              Team Members
+            </p>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white dark:bg-gray-900 transition-colors duration-200">
       {/* Page Title / Hero */}
       <div className="bg-blue-900 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -19,16 +19,16 @@ const AboutUs = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-3xl font-extrabold text-gray-900 mb-6">
+            <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-6">
               Who We Are
             </h2>
-            <div className="prose prose-lg text-gray-500">
+            <div className="prose prose-lg text-gray-500 dark:text-gray-300">
               <p className="mb-4">
                 Sanrachana is a leading turnkey service provider in structural
                 strengthening, repairs and retrofitting of all types of civil
                 engineering structures.
               </p>
-              <h3 className="text-xl font-bold text-gray-900 mt-6 mb-3">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mt-6 mb-3">
                 Our Key Services
               </h3>
               <ul className="list-disc pl-5 space-y-2">
@@ -41,14 +41,14 @@ const AboutUs = () => {
           </div>
 
           {/* Profile Section */}
-          <div className="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-100">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
               Dr. Mangesh V Joshi
             </h2>
-            <p className="text-blue-600 font-medium mb-4">
+            <p className="text-blue-600 dark:text-blue-400 font-medium mb-4">
               M.E. (Structures), Ph.D. IIT Bombay
             </p>
-            <div className="prose text-gray-500 text-sm">
+            <div className="prose text-gray-500 dark:text-gray-300 text-sm">
               <p className="mb-4">
                 Principal civil structural engineer and pioneer of
                 groundbreaking, “first-of-its-kind” technology initiatives that
@@ -64,7 +64,7 @@ const AboutUs = () => {
                 Structural Repairs and Retrofitting. Involved in more than 2500
                 repair and retrofit projects.
               </p>
-              <h4 className="font-bold text-gray-900 mt-4 mb-2">
+              <h4 className="font-bold text-gray-900 dark:text-white mt-4 mb-2">
                 Member & Advisor
               </h4>
               <ul className="list-disc pl-5 space-y-1">
@@ -95,7 +95,7 @@ const AboutUs = () => {
             <div className="inline-flex rounded-md shadow">
               <a
                 href="mailto:contact@sanrachana.in"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50"
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 dark:bg-gray-900 dark:text-blue-400 dark:hover:bg-gray-800"
               >
                 Mail Us Now
               </a>

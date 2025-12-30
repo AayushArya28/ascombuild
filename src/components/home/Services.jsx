@@ -45,9 +45,9 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white dark:bg-gray-900 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-12">
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-12">
           Services Offered
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -60,7 +60,7 @@ const Services = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-sm font-bold text-blue-900">
+              <h3 className="text-sm font-bold text-blue-900 dark:text-blue-300">
                 {service.title}
               </h3>
             </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "./context/ThemeContext";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
@@ -13,21 +14,23 @@ import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about-us" element={<AboutUs />} />
-          <Route path="services" element={<Services />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="contact-us" element={<ContactUs />} />
-          <Route path="careers" element={<Careers />} />
-          <Route path="clients" element={<Clients />} />
-          <Route path="awards" element={<Awards />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="about-us" element={<AboutUs />} />
+            <Route path="services" element={<Services />} />
+            <Route path="projects" element={<Projects />} />
+            <Route path="contact-us" element={<ContactUs />} />
+            <Route path="careers" element={<Careers />} />
+            <Route path="clients" element={<Clients />} />
+            <Route path="awards" element={<Awards />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
