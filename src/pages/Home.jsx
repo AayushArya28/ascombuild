@@ -1,19 +1,16 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/home/Hero";
-import AboutUs from "./components/home/AboutUs";
-import MarketServed from "./components/home/MarketServed";
-import ProjectLifeCycle from "./components/home/ProjectLifeCycle";
-import Services from "./components/home/Services";
-import Stats from "./components/home/Stats";
-import SocialMedia from "./components/home/SocialMedia";
-import Clients from "./components/home/Clients";
-import Footer from "./components/Footer";
+import Hero from "../components/home/Hero";
+import AboutUs from "../components/home/AboutUs";
+import MarketServed from "../components/home/MarketServed";
+import ProjectLifeCycle from "../components/home/ProjectLifeCycle";
+import Services from "../components/home/Services";
+import Stats from "../components/home/Stats";
+import SocialMedia from "../components/home/SocialMedia";
+import Clients from "../components/home/Clients";
 
 const Home = () => {
   return (
     <div className="font-sans text-gray-900 antialiased">
-      <Navbar />
       <Hero />
       <AboutUs />
       <MarketServed />
@@ -26,7 +23,7 @@ const Home = () => {
       <SocialMedia />
       <Clients />
 
-      {/* Structural Issue CTA */}
+      {/* Structural Issue CTA - This mimics the site style, maybe keep it or move to footer? Keeping for now as page specific content */}
       <div className="bg-red-700 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
           <h2 className="text-2xl font-bold text-white mb-4 md:mb-0">
@@ -40,8 +37,6 @@ const Home = () => {
           </a>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

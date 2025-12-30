@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,47 +10,56 @@ const Navbar = () => {
         <div className="flex justify-between h-16 items-center">
           <div className="shrink-0 flex items-center">
             {/* Placeholder for Logo */}
-            <a href="#" className="text-2xl font-bold text-blue-600">
+            <Link to="/" className="text-2xl font-bold text-blue-600">
               SAMRACHANA
-            </a>
+            </Link>
           </div>
           <div className="hidden md:flex space-x-8 items-center">
-            <a
-              href="#"
+            <Link
+              to="/"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
             >
               Home
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/about-us"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
             >
               About Us
-            </a>
-            <a
-              href="#"
+            </Link>
+            {/* Removed Products as it wasn't in the plan, but keeping it if it was there before? Plan didn't mention it. 
+                Wait, the previous file had "Products". The site has "Projects". 
+                I will map "Products" to nothing or remove it if not needed? 
+                The user site has "Projects". The previous file had "Products". 
+                I'll assume "Products" was a placeholder for "Projects" or "Services" or just extra.
+                I will stick to the plan: Links provided in plan.
+                Actually, looking at the site, "Products" isn't a top level link. "Projects" is.
+                I'll change "Products" to "Projects" to match the site better.
+            */}
+            <Link
+              to="/projects"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
             >
-              Products
-            </a>
-            <a
-              href="#"
+              Projects
+            </Link>
+            <Link
+              to="/clients"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
             >
               Clients
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/services"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
             >
               Services
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/contact-us"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
             >
               Contact Us
-            </a>
+            </Link>
             <a
               href="#"
               className="bg-red-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-red-700 transition-colors"
@@ -107,42 +117,48 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
-            <a
-              href="#"
+            <Link
+              to="/"
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+              onClick={() => setIsOpen(false)}
             >
               Home
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/about-us"
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+              onClick={() => setIsOpen(false)}
             >
               About Us
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/projects"
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+              onClick={() => setIsOpen(false)}
             >
-              Products
-            </a>
-            <a
-              href="#"
+              Projects
+            </Link>
+            <Link
+              to="/clients"
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+              onClick={() => setIsOpen(false)}
             >
               Clients
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/services"
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+              onClick={() => setIsOpen(false)}
             >
               Services
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/contact-us"
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+              onClick={() => setIsOpen(false)}
             >
               Contact Us
-            </a>
+            </Link>
             <a
               href="#"
               className="block w-full text-center bg-red-600 text-white px-4 py-2 rounded-md text-base font-medium hover:bg-red-700 mt-4"
