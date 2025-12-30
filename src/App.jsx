@@ -9,10 +9,12 @@ import ContactUs from "./pages/ContactUs";
 import Careers from "./pages/Careers";
 import Clients from "./pages/Clients";
 import Awards from "./pages/Awards";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
