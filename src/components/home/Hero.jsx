@@ -1,4 +1,5 @@
 import React from "react";
+import heroImage from "../../assets/images/1.png";
 
 const Hero = () => {
   return (
@@ -6,19 +7,18 @@ const Hero = () => {
       {/* Background Image Placeholder */}
       <div className="absolute inset-0 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" // Construction/Bridge image
-          alt="Bridge Construction"
+          src={heroImage}
+          alt="Construction project"
           className="w-full h-full object-cover opacity-60"
         />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight mb-4">
-          Building The Nation's Infrastructure
+          ASCOM BUILD PRVT. LTD.
         </h1>
         <p className="mt-4 text-xl text-gray-200 max-w-3xl mx-auto">
-          Delivering excellence in structural engineering and construction
-          projects across the country.
+          We are strengthening your Future.
         </p>
         <div className="mt-8 flex justify-center space-x-4">
           <a

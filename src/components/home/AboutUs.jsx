@@ -12,14 +12,10 @@ const AboutUs = () => {
               <span className="absolute bottom-0 left-0 w-1/2 h-1 bg-blue-600"></span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-              Samrachana is a leading construction and infrastructure company,
-              dedicated to building the foundations of tomorrow. With decades of
-              experience, we specialize in large-scale projects including
-              bridges, highways, and industrial complexes.
+              ASCOM BUILDCON Pvt Ltd is a specialized structural engineering and construction consultancy firm headquartered in Varanasi, Uttar Pradesh. We are dedicated to the scientific rehabilitation, strengthening, and repair of civil infrastructure across India. 
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-              Our team of expert engineers and project managers ensures quality,
-              safety, and timely delivery for every project we undertake.
+              With a foundation built on academic excellence and practical field expertise, ASCOM delivers innovative, cost-effective solutions that extend the operational lifespan of critical structures while ensuring public safety and preserving architectural heritage.
             </p>
             <ul className="space-y-3 mb-8">
               <li className="flex items-center text-gray-700 dark:text-gray-300">

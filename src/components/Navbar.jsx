@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
+import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,12 +11,9 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="shrink-0 flex items-center">
-            {/* Placeholder for Logo */}
-            <Link
-              to="/"
-              className="text-2xl font-bold text-blue-600 dark:text-blue-400"
-            >
-              SAMRACHANA
+            {/* Logo */}
+            <Link to="/" aria-label="Home" className="inline-flex items-center">
+              <img src={logo} alt="Samrachana logo" className="h-12 w-auto md:h-14" />
             </Link>
           </div>
           <div className="hidden md:flex space-x-8 items-center">
