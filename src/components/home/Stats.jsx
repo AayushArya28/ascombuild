@@ -6,10 +6,10 @@ const Stats = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
-            Samrachana at a Glance
+            ASCOM Buildcon at a Glance
           </h2>
           <p className="text-gray-500 dark:text-gray-400 mt-2">
-            Delivering quality infrastructure since our inception.
+            Delivering quality structural solutions across India since our inception.
           </p>
         </div>
 

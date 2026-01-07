@@ -10,7 +10,7 @@ const ContactUs = () => {
             Contact Us
           </h1>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-blue-200">
-            We are here to help you with your structural strengthening needs.
+            We are here to help you with your structural rehabilitation needs.
           </p>
         </div>
       </div>
@@ -29,9 +29,9 @@ const ContactUs = () => {
                     Address
                   </h3>
                   <p className="mt-2 text-gray-600 dark:text-gray-300">
-                    Sanrachana Structural Strengthening Private Limited <br />
-                    102, Monalisa CHS, Hariniwas circle, <br />
-                    Thanes West, Maharashtra 400602
+                    ASCOM BUILDCON Pvt. Ltd. <br />
+                    Varanasi, Uttar Pradesh <br />
+                    India - 221001
                   </p>
                 </div>
                 <div>
@@ -39,8 +39,8 @@ const ContactUs = () => {
                     Phone
                   </h3>
                   <p className="mt-2 text-gray-600 dark:text-gray-300">
-                    Mobile: +91-993 088 4287 <br />
-                    Phone: +91-22-2540 0122
+                    Mobile: +91-9XX XXX XXXX <br />
+                    Phone: +91-542-XXX XXXX
                   </p>
                 </div>
                 <div>
@@ -49,10 +49,10 @@ const ContactUs = () => {
                   </h3>
                   <p className="mt-2 text-gray-600 dark:text-gray-300">
                     <a
-                      href="mailto:contact@sanrachana.in"
+                      href="mailto:info@ascombuildcon.com"
                       className="hover:text-blue-500 dark:hover:text-blue-300"
                     >
-                      contact@sanrachana.in
+                      info@ascombuildcon.com
                     </a>
                   </p>
                 </div>

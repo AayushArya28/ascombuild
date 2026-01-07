@@ -15,10 +15,13 @@ const Hero = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight mb-4">
-          ASCOM BUILD PRVT. LTD.
+          ASCOM BUILDCON PVT. LTD.
         </h1>
         <p className="mt-4 text-xl text-gray-200 max-w-3xl mx-auto">
-          We are strengthening your Future.
+          Scientific Rehabilitation, Strengthening & Repair of Civil Infrastructure
+        </p>
+        <p className="mt-2 text-lg text-gray-300 max-w-2xl mx-auto">
+          Headquartered in Varanasi, Uttar Pradesh - Delivering innovative, cost-effective structural solutions across India
         </p>
         <div className="mt-8 flex justify-center space-x-4">
           <a

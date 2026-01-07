@@ -10,7 +10,7 @@ const AboutUs = () => {
             About Us
           </h1>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-blue-200">
-            Sanrachana Structural Strengthening Pvt. Ltd.
+            ASCOM BUILDCON Pvt. Ltd.
           </p>
         </div>
       </div>
@@ -24,9 +24,10 @@ const AboutUs = () => {
             </h2>
             <div className="prose prose-lg text-gray-500 dark:text-gray-300">
               <p className="mb-4">
-                Sanrachana is a leading turnkey service provider in structural
-                strengthening, repairs and retrofitting of all types of civil
-                engineering structures.
+                ASCOM BUILDCON Pvt Ltd is a specialized structural engineering and construction consultancy firm headquartered in Varanasi, Uttar Pradesh. We are dedicated to the scientific rehabilitation, strengthening, and repair of civil infrastructure across India.
+              </p>
+              <p className="mb-4">
+                With a foundation built on academic excellence and practical field expertise, ASCOM delivers innovative, cost-effective solutions that extend the operational lifespan of critical structures while ensuring public safety and preserving architectural heritage.
               </p>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mt-6 mb-3">
                 Our Key Services
@@ -89,12 +90,12 @@ const AboutUs = () => {
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
           <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
             <span className="block">Structural Issues?</span>
-            <span className="block text-blue-200">Email us today.</span>
+            <span className="block text-blue-200">Contact ASCOM Buildcon today.</span>
           </h2>
           <div className="mt-8 flex lg:mt-0 lg:shrink-0">
             <div className="inline-flex rounded-md shadow">
               <a
-                href="mailto:contact@sanrachana.in"
+                href="mailto:info@ascombuildcon.com"
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 dark:bg-gray-900 dark:text-blue-400 dark:hover:bg-gray-800"
               >
                 Mail Us Now

@@ -12,12 +12,28 @@ const AboutUs = () => {
               <span className="absolute bottom-0 left-0 w-1/2 h-1 bg-blue-600"></span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-              ASCOM BUILDCON Pvt Ltd is a specialized structural engineering and construction consultancy firm headquartered in Varanasi, Uttar Pradesh. We are dedicated to the scientific rehabilitation, strengthening, and repair of civil infrastructure across India. 
+              ASCOM BUILDCON Pvt Ltd is a specialized structural engineering and construction consultancy firm headquartered in Varanasi, Uttar Pradesh. We are dedicated to the scientific rehabilitation, strengthening, and repair of civil infrastructure across India.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
               With a foundation built on academic excellence and practical field expertise, ASCOM delivers innovative, cost-effective solutions that extend the operational lifespan of critical structures while ensuring public safety and preserving architectural heritage.
             </p>
             <ul className="space-y-3 mb-8">
+              <li className="flex items-center text-gray-700 dark:text-gray-300">
+                <svg
+                  className="h-5 w-5 text-green-500 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+                Structural Repairs & Retrofitting
+              </li>
               <li className="flex items-center text-gray-700 dark:text-gray-300">
                 <svg
                   className="h-5 w-5 text-green-500 mr-2"
@@ -48,7 +64,7 @@ const AboutUs = () => {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                Construction & Project Management
+                Seismic & Fire Retrofit
               </li>
               <li className="flex items-center text-gray-700 dark:text-gray-300">
                 <svg
@@ -64,7 +80,7 @@ const AboutUs = () => {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                Quality Assurance & Control
+                Heritage Structure Preservation
               </li>
             </ul>
             <a

@@ -2,22 +2,70 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const servicesList = [
-  "Concrete repairs",
-  "Corrosion Study & Cathodic Protection",
-  "Underwater Repairs",
-  "Retrofit Design",
-  "Structural Strengthening",
-  "Seismic Retrofit",
-  "External Post Tensioning Systems",
-  "Structural Steel Fabrication",
-  "Bearing & Structural Joint Maintenance",
-  "As-built Drawings by Scan",
-  "Pre and Post repair NDT Tests",
-  "Full Scale Load Testing",
-  "Structural Health Monitoring",
-  "Moisture Control & Waterproofing",
-  "Masonry structure retrofit",
-  "Building Façade and Envelope Restoration",
+  {
+    title: "Structural Repair & Strengthening",
+    description: "Comprehensive repair and strengthening of deteriorated concrete and masonry structures using advanced materials and techniques."
+  },
+  {
+    title: "Seismic Retrofitting",
+    description: "Upgrading existing structures to meet current seismic codes and improve earthquake resistance."
+  },
+  {
+    title: "Fire Damage Assessment & Repair",
+    description: "Expert assessment of fire-damaged structures and implementation of appropriate repair strategies."
+  },
+  {
+    title: "Heritage Structure Preservation",
+    description: "Specialized restoration and preservation of heritage buildings while maintaining architectural integrity."
+  },
+  {
+    title: "Bridge & Infrastructure Rehabilitation",
+    description: "Complete rehabilitation services for bridges, flyovers, and critical infrastructure elements."
+  },
+  {
+    title: "Structural Health Monitoring",
+    description: "Advanced sensor-based monitoring systems to track structural performance and detect early warning signs."
+  },
+  {
+    title: "Corrosion Study & Cathodic Protection",
+    description: "Comprehensive corrosion assessment and implementation of cathodic protection systems."
+  },
+  {
+    title: "Concrete Repairs",
+    description: "High-quality concrete repair solutions for spalling, cracks, and deteriorated concrete elements."
+  },
+  {
+    title: "External Post Tensioning Systems",
+    description: "Installation of external post-tensioning systems to enhance structural capacity."
+  },
+  {
+    title: "Structural Steel Fabrication",
+    description: "Custom steel fabrication and installation for structural strengthening applications."
+  },
+  {
+    title: "Non-Destructive Testing (NDT)",
+    description: "Comprehensive NDT services including rebound hammer, ultrasonic pulse velocity, and core testing."
+  },
+  {
+    title: "Structural Audit & Assessment",
+    description: "Detailed structural audits and condition assessments for buildings and infrastructure."
+  },
+  {
+    title: "Carbon Fiber Reinforcement (CFRP)",
+    description: "Application of carbon fiber reinforced polymer systems for structural strengthening."
+  },
+  {
+    title: "Grouting & Injection",
+    description: "Epoxy and cement grouting for crack repair and foundation stabilization."
+  },
+  {
+    title: "Waterproofing Solutions",
+    description: "Comprehensive waterproofing treatments for basements, roofs, and water-retaining structures."
+  },
+  {
+    title: "Foundation Strengthening",
+    description: "Underpinning and foundation strengthening solutions for settlement and capacity issues."
+  },
 ];
 
 const Services = () => {
@@ -44,19 +92,19 @@ const Services = () => {
             >
               <div className="p-6 grow">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                  {service}
+                  {service.title}
                 </h3>
                 <p className="text-gray-500 dark:text-gray-300 mb-4">
-                  Expert solutions for {service.toLowerCase()}.
+                  {service.description}
                 </p>
               </div>
               <div className="bg-gray-50 dark:bg-gray-900 px-6 py-4 border-t border-gray-100 dark:border-gray-700">
-                <a
-                  href="#"
+                <Link
+                  to="/contact-us"
                   className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium text-sm flex items-center"
                 >
-                  Read more &rarr;
-                </a>
+                  Get a Quote &rarr;
+                </Link>
               </div>
             </div>
           ))}
