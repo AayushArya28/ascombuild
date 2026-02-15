@@ -49,7 +49,7 @@ const MarketServed = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 relative inline-block">
           Market Served
-          <span className="absolute bottom-0 left-0 w-1/2 h-1 bg-blue-600"></span>
+          <span className="absolute bottom-0 left-0 w-1/2 h-1 bg-red-600"></span>
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {markets.map((market, index) => (

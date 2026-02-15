@@ -8,8 +8,8 @@ const Bridges = () => {
 
                 <section className="flex flex-col md:flex-row gap-8 items-start">
                     <div className="md:w-1/2">
-                        <div className="bg-blue-50 dark:bg-gray-800 p-6 rounded-lg border border-blue-100 dark:border-gray-700">
-                            <h3 className="text-xl font-bold text-blue-800 dark:text-blue-400 mb-2">Why do we need ANSYS or any analysis software to assess the structure</h3>
+                        <div className="bg-red-50 dark:bg-gray-800 p-6 rounded-lg border border-red-100 dark:border-gray-700">
+                            <h3 className="text-xl font-bold text-red-800 dark:text-red-400 mb-2">Why do we need ANSYS or any analysis software to assess the structure</h3>
                             <div className="mt-4 h-48 bg-gray-200 dark:bg-gray-700 rounded-lg flex items-center justify-center">
                                 {/* Placeholder for Bridge Image */}
                                 <span className="text-gray-500">Bridge Image</span>

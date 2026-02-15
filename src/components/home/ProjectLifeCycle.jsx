@@ -38,9 +38,9 @@ const ProjectLifeCycle = () => {
                     key={index}
                     className="flex items-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow"
                   >
-                    <div className="shrink-0 p-3 bg-blue-100 rounded-full mr-4">
+                    <div className="shrink-0 p-3 bg-red-100 rounded-full mr-4">
                       <svg
-                        className="h-6 w-6 text-blue-600"
+                        className="h-6 w-6 text-red-600"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"

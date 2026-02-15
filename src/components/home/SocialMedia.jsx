@@ -69,7 +69,7 @@ const SocialMedia = () => {
         <div className="text-center mt-8">
           <a
             href="#"
-            className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium"
+            className="text-red-600 dark:text-red-400 hover:text-red-800 dark:hover:text-red-300 font-medium"
           >
             View more on our channel &rarr;
           </a>

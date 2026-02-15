@@ -54,8 +54,8 @@ const Testing = () => {
     return (
         <ServicePageLayout title="Testing">
             <div className="space-y-8 text-gray-700 dark:text-gray-300">
-                <div className="w-full bg-blue-50 dark:bg-gray-800 p-4 border-l-4 border-blue-600 mb-8 rounded-r-lg">
-                    <h3 className="font-bold text-lg text-blue-900 dark:text-blue-300">Wireless Monitoring Systems for Structural Health Monitoring</h3>
+                <div className="w-full bg-red-50 dark:bg-gray-800 p-4 border-l-4 border-red-600 mb-8 rounded-r-lg">
+                    <h3 className="font-bold text-lg text-red-900 dark:text-red-300">Wireless Monitoring Systems for Structural Health Monitoring</h3>
                     <p className="text-sm mt-1">Spotlight Wireless Sensor...</p>
                 </div>
 

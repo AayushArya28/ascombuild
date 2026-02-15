@@ -9,7 +9,7 @@ const AboutUs = () => {
           <div>
             <h2 className="font-bold text-gray-900 dark:text-white mb-6 relative inline-block">
               About Us
-              <span className="absolute bottom-0 left-0 w-1/2 h-1 bg-blue-600"></span>
+              <span className="absolute bottom-0 left-0 w-1/2 h-1 bg-red-600"></span>
             </h2>
             <p className="text-gray-600 dark:text-gray-300 mb-4">
               ASCOM BUILDCON Pvt Ltd is a specialized structural engineering and construction consultancy firm headquartered in Varanasi, Uttar Pradesh. We are dedicated to the scientific rehabilitation, strengthening, and repair of civil infrastructure across India.
@@ -85,7 +85,7 @@ const AboutUs = () => {
             </ul>
             <a
               href="#"
-              className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors"
+              className="inline-block bg-red-600 text-white px-6 py-3 rounded-md font-medium hover:bg-red-700 transition-colors"
             >
               Read More
             </a>

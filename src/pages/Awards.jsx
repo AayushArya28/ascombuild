@@ -108,9 +108,9 @@ const Awards = () => {
 
       {/* Coming Soon Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-        <div className="py-12 bg-blue-50 dark:bg-gray-800 rounded-lg">
+        <div className="py-12 bg-red-50 dark:bg-gray-800 rounded-lg">
           <svg
-            className="mx-auto h-16 w-16 text-blue-500 dark:text-blue-400"
+            className="mx-auto h-16 w-16 text-red-500 dark:text-red-400"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

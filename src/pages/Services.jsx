@@ -101,7 +101,7 @@ const Services = () => {
               <div className="bg-gray-50 dark:bg-gray-900 px-6 py-4 border-t border-gray-100 dark:border-gray-700">
                 <Link
                   to="/contact-us"
-                  className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium text-sm flex items-center"
+                  className="text-red-600 dark:text-red-400 hover:text-red-800 dark:hover:text-red-300 font-medium text-sm flex items-center"
                 >
                   Get a Quote &rarr;
                 </Link>
@@ -116,7 +116,7 @@ const Services = () => {
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
             <span className="block">Need a specialized service?</span>
-            <span className="block text-blue-600 dark:text-blue-400">
+            <span className="block text-red-600 dark:text-red-400">
               Contact our experts today.
             </span>
           </h2>
@@ -124,7 +124,7 @@ const Services = () => {
             <div className="inline-flex rounded-md shadow">
               <Link
                 to="/contact-us"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700"
               >
                 Get in Touch
               </Link>

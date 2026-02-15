@@ -60,7 +60,7 @@ const Services = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="font-bold text-blue-900 dark:text-blue-300">
+              <h3 className="font-bold text-red-900 dark:text-red-300">
                 {service.title}
               </h3>
             </div>

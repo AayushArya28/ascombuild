@@ -103,7 +103,7 @@ const Clients = () => {
                     key={clientIndex}
                     className="text-gray-600 dark:text-gray-400 flex items-start"
                   >
-                    <span className="text-blue-500 dark:text-blue-400 mr-2">
+                    <span className="text-red-500 dark:text-red-400 mr-2">
                       •
                     </span>
                     {client}

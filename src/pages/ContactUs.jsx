@@ -39,8 +39,8 @@ const ContactUs = () => {
                     Phone
                   </h3>
                   <p className="mt-2 text-gray-600 dark:text-gray-300">
-                    Mobile: +91-9XX XXX XXXX <br />
-                    Phone: +91-542-XXX XXXX
+                    Mobile: +91 85738 37383 <br />
+                    Phone: +91-542-2989427
                   </p>
                 </div>
                 <div>

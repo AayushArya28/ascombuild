@@ -106,7 +106,7 @@ const Footer = () => {
           </div>
 
           {/* Brand/Owner Section */}
-          <div className="flex flex-col items-center justify-start pt-8 lg:pt-0">
+          <div className="flex flex-col items-center justify-center pt-8 lg:pt-0">
             <img src={logo} alt="ASCOM" className="h-16 w-auto mb-4" />
             <span className="text-white font-bold text-xl tracking-wider">ASCOM</span>
             <p className="text-gray-500 text-xs mt-2 text-center">Structural Engineering Experts</p>

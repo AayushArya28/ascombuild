@@ -78,9 +78,9 @@ const Projects = () => {
               key={index}
               className="group relative bg-gradient-to-br from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 p-6 cursor-pointer border border-gray-100 dark:border-gray-700"
             >
-              <div className="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-red-600 opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
               <div className="relative z-10">
-                <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors mb-2">
+                <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200 group-hover:text-red-700 dark:group-hover:text-red-400 transition-colors mb-2">
                   {category.title}
                 </h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
