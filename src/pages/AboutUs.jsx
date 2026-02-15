@@ -8,7 +8,7 @@ const AboutUs = () => {
       <div className="relative bg-gray-900 h-64 flex flex-col justify-center items-center text-center text-white">
         <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="z-10 relative">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
+          <h1 className="mb-4 text-white">About Us</h1>
           <div className="flex space-x-2 text-sm md:text-base justify-center">
             <Link to="/" className="hover:text-red-500 transition-colors">Home</Link>
             <span>-</span>

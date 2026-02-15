@@ -6,7 +6,7 @@ const ContactUs = () => {
       {/* Hero Section */}
       <div className="bg-blue-900 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
+          <h1 className="text-white">
             Contact Us
           </h1>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-blue-200">

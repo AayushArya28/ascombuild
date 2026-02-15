@@ -6,7 +6,19 @@ html {
 }
 
 body {
-  @apply bg-white dark:bg-gray-900 transition-colors duration-200 font-sans;
+  @apply bg-white dark:bg-gray-900 transition-colors duration-200 font-sans text-[20px] leading-[30px] font-medium;
+}
+
+h1 {
+  @apply font-sans font-semibold text-[48px] leading-[59px];
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-sans font-bold text-[28px] leading-[34px];
 }
 
 .animate-on-scroll {

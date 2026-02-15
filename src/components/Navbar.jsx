@@ -163,7 +163,9 @@ const Navbar = () => {
             <div className="ml-4 flex items-center space-x-4">
               <ThemeToggle />
               <a
-                href="#"
+                href="/ASCOM Brochure April 22.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-ascom-red text-white px-5 py-2.5 rounded-md hover:bg-red-700 transition-all shadow-md hover:shadow-lg font-medium uppercase text-sm tracking-wide transform hover:-translate-y-0.5"
               >
                 Download Brochure
@@ -335,7 +337,9 @@ const Navbar = () => {
               Contact Us
             </Link>
             <a
-              href="#"
+              href="/ASCOM Brochure April 22.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block text-base font-medium text-gray-800 dark:text-gray-200 hover:text-ascom-red dark:hover:text-red-500 py-2"
             >
               Download Brochure
@@ -347,7 +351,7 @@ const Navbar = () => {
             <div className="space-y-3 mb-6">
               <div className="flex items-center text-gray-600 dark:text-gray-400 text-sm">
                 <svg className="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                0542-2989427 / 9415 872 871
+                +91 85738 37383 / 0542-2989427
               </div>
               <div className="flex items-center text-gray-600 dark:text-gray-400 text-sm">
                 <svg className="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
@@ -361,9 +365,23 @@ const Navbar = () => {
               </div>
             </div>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-800 dark:text-white hover:text-ascom-red text-xl transition-colors"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" className="text-gray-800 dark:text-white hover:text-ascom-red text-xl transition-colors"><i className="fab fa-twitter"></i></a>
-              <a href="#" className="text-gray-800 dark:text-white hover:text-ascom-red text-xl transition-colors"><i className="fab fa-linkedin-in"></i></a>
+              <a href="http://www.facebook.com/" className="text-gray-800 dark:text-white hover:text-ascom-red text-xl transition-colors">
+                <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a href="http://www.twitter.com/" className="text-gray-800 dark:text-white hover:text-ascom-red text-xl transition-colors">
+                <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a href="http://www.instagram.com/" className="text-gray-800 dark:text-white hover:text-ascom-red text-xl transition-colors">
+                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
