@@ -9,6 +9,16 @@ const Navbar = () => {
   const [whatWeDoDropdown, setWhatWeDoDropdown] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  // Timeout refs for delayed closing
+  const aboutTimeoutRef = React.useRef(null);
+  const whatWeDoTimeoutRef = React.useRef(null);
+  const segmentTimeoutRef = React.useRef(null);
+  const specialisationTimeoutRef = React.useRef(null);
+
+  // Nested submenu states
+  const [segmentOpen, setSegmentOpen] = useState(false);
+  const [specialisationOpen, setSpecialisationOpen] = useState(false);
+
   // Mobile menu states
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
   const [mobileWhatWeDoOpen, setMobileWhatWeDoOpen] = useState(false);
@@ -32,12 +42,20 @@ const Navbar = () => {
     };
   }, [scrolled]);
 
-  const handleDropdownEnter = (setter) => {
+  const handleDropdownEnter = (setter, timeoutRef) => {
+    // Clear any existing timeout
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
     setter(true);
   }
 
-  const handleDropdownLeave = (setter) => {
-    setter(false);
+  const handleDropdownLeave = (setter, timeoutRef) => {
+    // Add delay before closing
+    timeoutRef.current = setTimeout(() => {
+      setter(false);
+    }, 300); // 300ms delay
   }
 
   const toggleMobileSubmenu = (setter) => {
@@ -71,8 +89,8 @@ const Navbar = () => {
             {/* About ASCOM Dropdown */}
             <div
               className="relative h-full flex items-center group"
-              onMouseEnter={() => handleDropdownEnter(setAboutDropdown)}
-              onMouseLeave={() => handleDropdownLeave(setAboutDropdown)}
+              onMouseEnter={() => handleDropdownEnter(setAboutDropdown, aboutTimeoutRef)}
+              onMouseLeave={() => handleDropdownLeave(setAboutDropdown, aboutTimeoutRef)}
             >
               <button
                 onClick={() => navigate('/about-us')}
@@ -100,8 +118,8 @@ const Navbar = () => {
             {/* What we do Dropdown */}
             <div
               className="relative h-full flex items-center group"
-              onMouseEnter={() => handleDropdownEnter(setWhatWeDoDropdown)}
-              onMouseLeave={() => handleDropdownLeave(setWhatWeDoDropdown)}
+              onMouseEnter={() => handleDropdownEnter(setWhatWeDoDropdown, whatWeDoTimeoutRef)}
+              onMouseLeave={() => handleDropdownLeave(setWhatWeDoDropdown, whatWeDoTimeoutRef)}
             >
               <a
                 href="#"
@@ -117,13 +135,17 @@ const Navbar = () => {
               >
                 <div className="py-2 relative">
                   {/* Segment Submenu Trigger */}
-                  <div className="group/segment relative">
+                  <div
+                    className="relative"
+                    onMouseEnter={() => handleDropdownEnter(setSegmentOpen, segmentTimeoutRef)}
+                    onMouseLeave={() => handleDropdownLeave(setSegmentOpen, segmentTimeoutRef)}
+                  >
                     <button className="w-full text-left px-4 py-3 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-ascom-red transition-colors flex justify-between items-center">
                       Segment
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
                     </button>
                     {/* Segment Nested Menu */}
-                    <div className="absolute left-full top-0 w-48 bg-white dark:bg-gray-800 shadow-xl rounded-lg border border-gray-100 dark:border-gray-700 hidden group-hover/segment:block ml-2">
+                    <div className={`absolute left-full top-0 w-48 bg-white dark:bg-gray-800 shadow-xl rounded-lg border border-gray-100 dark:border-gray-700 ml-2 transition-all duration-200 ${segmentOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
                       <Link to="/services" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-ascom-red transition-colors first:rounded-t-lg">Audit</Link>
                       <Link to="/testing" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-ascom-red transition-colors">Testing</Link>
                       <Link to="/consultancy" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-ascom-red transition-colors">Consultancy</Link>
@@ -132,13 +154,17 @@ const Navbar = () => {
                   </div>
 
                   {/* Specialisation Submenu Trigger */}
-                  <div className="group/specialisation relative">
+                  <div
+                    className="relative"
+                    onMouseEnter={() => handleDropdownEnter(setSpecialisationOpen, specialisationTimeoutRef)}
+                    onMouseLeave={() => handleDropdownLeave(setSpecialisationOpen, specialisationTimeoutRef)}
+                  >
                     <button className="w-full text-left px-4 py-3 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-ascom-red transition-colors flex justify-between items-center">
                       Specialisation
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
                     </button>
                     {/* Specialisation Nested Menu */}
-                    <div className="absolute left-full top-0 w-48 bg-white dark:bg-gray-800 shadow-xl rounded-lg border border-gray-100 dark:border-gray-700 hidden group-hover/specialisation:block ml-2">
+                    <div className={`absolute left-full top-0 w-48 bg-white dark:bg-gray-800 shadow-xl rounded-lg border border-gray-100 dark:border-gray-700 ml-2 transition-all duration-200 ${specialisationOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
                       <Link to="/bridges" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-ascom-red transition-colors first:rounded-t-lg">Bridges</Link>
                       <Link to="/skyscrapers" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-ascom-red transition-colors last:rounded-b-lg">Skyscrapers</Link>
                     </div>

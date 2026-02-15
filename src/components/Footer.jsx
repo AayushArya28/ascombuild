@@ -118,7 +118,7 @@ const Footer = () => {
       <div className="bg-[#22252b] mt-12 py-6 border-t border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center gap-6">
           <p className="text-gray-500 text-center">
-            © ASCOM 2022. Developed by <a href="https://dakshitsolutions.com/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Daksh IT Solutions</a>
+            © ASCOM 2022
           </p>
         </div>
       </div>

@@ -6,13 +6,13 @@ const AboutUs = () => {
   return (
     <div className="bg-white dark:bg-gray-800 transition-colors duration-200 font-sans pt-20">
       {/* Page Title / Hero */}
-      <div className="relative bg-gray-900 h-64 flex flex-col justify-center items-center text-center text-white">
+      <div className="relative bg-gray-900 py-16 flex flex-col justify-center items-center text-center text-white">
         <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="z-10 relative">
-          <h1 className="mb-4 text-white">About Us</h1>
+          <h1 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl mb-4">About Us</h1>
           <div className="flex space-x-2 text-sm md:text-base justify-center">
             <Link to="/" className="hover:text-red-500 transition-colors">Home</Link>
-            <span>-</span>
+            <span>/</span>
             <span className="text-red-500">About Us</span>
           </div>
         </div>

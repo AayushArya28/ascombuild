@@ -70,14 +70,14 @@ const servicesList = [
 
 const Services = () => {
   return (
-    <div className="bg-gray-50 dark:bg-gray-900 min-h-screen transition-colors duration-200">
+    <div className="bg-gray-50 dark:bg-gray-900 min-h-screen transition-colors duration-200 pt-20">
       {/* Hero Section */}
-      <div className="bg-blue-900 py-16">
+      <div className="bg-gray-900 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-white">
+          <h1 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
             Our Services
           </h1>
-          <p className="mt-4 max-w-2xl mx-auto text-xl text-blue-200">
+          <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-300">
             Comprehensive structural engineering solutions.
           </p>
         </div>
