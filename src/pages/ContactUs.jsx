@@ -20,12 +20,12 @@ const ContactUs = () => {
           {/* Contact Information */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
             <div className="p-8">
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+              <h2 className="font-bold text-gray-900 dark:text-white mb-6">
                 Get In Touch
               </h2>
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-lg font-medium text-blue-600 dark:text-blue-400">
+                  <h3 className="font-medium text-blue-600 dark:text-blue-400">
                     Address
                   </h3>
                   <p className="mt-2 text-gray-600 dark:text-gray-300">
@@ -35,7 +35,7 @@ const ContactUs = () => {
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-blue-600 dark:text-blue-400">
+                  <h3 className="font-medium text-blue-600 dark:text-blue-400">
                     Phone
                   </h3>
                   <p className="mt-2 text-gray-600 dark:text-gray-300">
@@ -44,7 +44,7 @@ const ContactUs = () => {
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-blue-600 dark:text-blue-400">
+                  <h3 className="font-medium text-blue-600 dark:text-blue-400">
                     Email
                   </h3>
                   <p className="mt-2 text-gray-600 dark:text-gray-300">
@@ -66,7 +66,7 @@ const ContactUs = () => {
 
           {/* Contact Form */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+            <h2 className="font-bold text-gray-900 dark:text-white mb-6">
               Send us a Message
             </h2>
             <form className="space-y-6">

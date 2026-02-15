@@ -91,7 +91,7 @@ const Services = () => {
               className="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100 dark:border-gray-700 flex flex-col"
             >
               <div className="p-6 grow">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                <h3 className="font-bold text-gray-900 dark:text-white mb-3">
                   {service.title}
                 </h3>
                 <p className="text-gray-500 dark:text-gray-300 mb-4">

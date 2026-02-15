@@ -22,7 +22,7 @@ const Careers = () => {
 
         {/* Intro Text */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">Careers</h2>
+          <h2 className="font-bold text-gray-900 dark:text-white mb-6">Careers</h2>
           <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
             ASCOM enamours the kind of personality who plan big, bloom in collaboration and have the strong resolution to realize their ideas.
           </p>

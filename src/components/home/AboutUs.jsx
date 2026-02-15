@@ -7,14 +7,14 @@ const AboutUs = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6 relative inline-block">
+            <h2 className="font-bold text-gray-900 dark:text-white mb-6 relative inline-block">
               About Us
               <span className="absolute bottom-0 left-0 w-1/2 h-1 bg-blue-600"></span>
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
+            <p className="text-gray-600 dark:text-gray-300 mb-4">
               ASCOM BUILDCON Pvt Ltd is a specialized structural engineering and construction consultancy firm headquartered in Varanasi, Uttar Pradesh. We are dedicated to the scientific rehabilitation, strengthening, and repair of civil infrastructure across India.
             </p>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+            <p className="text-gray-600 dark:text-gray-300 mb-6">
               With a foundation built on academic excellence and practical field expertise, ASCOM delivers innovative, cost-effective solutions that extend the operational lifespan of critical structures while ensuring public safety and preserving architectural heritage.
             </p>
             <ul className="space-y-3 mb-8">

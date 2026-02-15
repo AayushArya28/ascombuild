@@ -1,11 +1,76 @@
 import React from "react";
 
+const CountUp = ({ end, duration = 2000, suffix = "" }) => {
+  const [count, setCount] = React.useState(0);
+  const countRef = React.useRef(null);
+  const [isVisible, setIsVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (countRef.current) {
+      observer.observe(countRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  React.useEffect(() => {
+    if (!isVisible) return;
+
+    let start = 0;
+    const endValue = parseInt(end.replace(/,/g, ""), 10); // Remove commas for calculation
+    const incrementTime = (duration / endValue) * 1000; // Calculate rough interval (not used directly in RAF)
+
+    // Using simple ease-out logic or linear for simplicity
+    let startTime = null;
+    let animationFrame;
+
+    const step = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const progress = timestamp - startTime;
+      const percentage = Math.min(progress / duration, 1);
+
+      // select an easing function (easeOutExpo)
+      // 1 - Math.pow(2, -10 * percentage)
+      // Or just simple generic ease
+      const ease = percentage === 1 ? 1 : 1 - Math.pow(2, -10 * percentage);
+
+      const current = Math.floor(ease * endValue);
+      setCount(current);
+
+      if (progress < duration) {
+        animationFrame = window.requestAnimationFrame(step);
+      } else {
+        setCount(endValue);
+      }
+    };
+
+    animationFrame = window.requestAnimationFrame(step);
+
+    return () => window.cancelAnimationFrame(animationFrame);
+  }, [isVisible, end, duration]);
+
+  // Format number with commas
+  const formattedCount = count.toLocaleString() + suffix;
+
+  return <span ref={countRef}>{formattedCount}</span>;
+};
+
 const Stats = () => {
   return (
     <section className="py-12 bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-700 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+          <h2 className="font-bold text-gray-900 dark:text-white">
             ASCOM Buildcon at a Glance
           </h2>
           <p className="text-gray-500 dark:text-gray-400 mt-2">
@@ -30,8 +95,10 @@ const Stats = () => {
                 ></path>
               </svg>
             </div>
-            <h3 className="text-4xl font-bold text-red-600">21+</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+            <h3 className="text-4xl font-bold text-red-600">
+              <CountUp end="21" suffix="+" />
+            </h3>
+            <p className="text-gray-600 dark:text-gray-300 mt-1">
               Years of Experience
             </p>
           </div>
@@ -47,12 +114,14 @@ const Stats = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="1.5"
-                  d="M3 21v-8a2 2 0 012-2h14a2 2 0 012 2v8M3 21h18M5 21v-8a2 2 0 012-2h14a2 2 0 012 2v8m-2 0h.01M7 21h.01M5 11V9a2 2 0 012-2h14a2 2 0 012 2v2M5 7V5a2 2 0 012-2h14a2 2 0 012 2v2m-2 2h2m-2-4h2"
+                  d="M3 21v-8a2 2 0 012-2h14a2 2 0 012 2v8M3 21h18M5 21v-8a2 2 0 012-2h14a2 2 0 012 2v2M5 7V5a2 2 0 012-2h14a2 2 0 012 2v2m-2 2h2m-2-4h2"
                 ></path>
               </svg>
             </div>
-            <h3 className="text-4xl font-bold text-red-600">2,500+</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+            <h3 className="text-4xl font-bold text-red-600">
+              <CountUp end="2,500" suffix="+" />
+            </h3>
+            <p className="text-gray-600 dark:text-gray-300 mt-1">
               Projects Completed
             </p>
           </div>
@@ -72,8 +141,10 @@ const Stats = () => {
                 ></path>
               </svg>
             </div>
-            <h3 className="text-4xl font-bold text-red-600">25+</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+            <h3 className="text-4xl font-bold text-red-600">
+              <CountUp end="25" suffix="+" />
+            </h3>
+            <p className="text-gray-600 dark:text-gray-300 mt-1">
               Awards
             </p>
           </div>
@@ -93,8 +164,10 @@ const Stats = () => {
                 ></path>
               </svg>
             </div>
-            <h3 className="text-4xl font-bold text-red-600">100+</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+            <h3 className="text-4xl font-bold text-red-600">
+              <CountUp end="100" suffix="+" />
+            </h3>
+            <p className="text-gray-600 dark:text-gray-300 mt-1">
               Team Members
             </p>
           </div>
