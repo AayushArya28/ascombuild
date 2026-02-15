@@ -30,7 +30,7 @@ const Home = () => {
             Structural Issues? Email us!
           </h2>
           <a
-            href="mailto:info@samrachana.com"
+            href="mailto:info@ascombuild.com"
             className="bg-white text-red-700 px-8 py-3 rounded-md font-bold hover:bg-gray-100 transition-colors"
           >
             Mail Us

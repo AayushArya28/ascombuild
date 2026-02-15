@@ -29,9 +29,17 @@ const ContactUs = () => {
                     Address
                   </h3>
                   <p className="mt-2 text-gray-600 dark:text-gray-300">
-                    ASCOM BUILDCON Pvt. Ltd. <br />
-                    Varanasi, Uttar Pradesh <br />
-                    India - 221001
+                    <strong>Registered Office:</strong> <br />
+                    202, Vrindavan Residency, Nuawn <br />
+                    Varanasi, Uttar Pradesh - 221011 <br />
+                    India
+                  </p>
+                  <p className="mt-4 text-gray-600 dark:text-gray-300">
+                    <strong>Branch Office:</strong> <br />
+                    Noida, NCR (National Capital Region)
+                  </p>
+                  <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
+                    CIN No.: U45309UP2022PTC158277
                   </p>
                 </div>
                 <div>
@@ -39,8 +47,8 @@ const ContactUs = () => {
                     Phone
                   </h3>
                   <p className="mt-2 text-gray-600 dark:text-gray-300">
-                    Mobile: +91 85738 37383 <br />
-                    Phone: +91-542-2989427
+                    Mobile: <a href="tel:+919415872871" className="hover:text-red-500">+91 9415 872 871</a> <br />
+                    Phone: <a href="tel:+915424013470" className="hover:text-red-500">0542 4013470</a>
                   </p>
                 </div>
                 <div>
@@ -49,10 +57,16 @@ const ContactUs = () => {
                   </h3>
                   <p className="mt-2 text-gray-600 dark:text-gray-300">
                     <a
-                      href="mailto:info@ascombuildcon.com"
+                      href="mailto:info@ascombuild.com"
                       className="hover:text-red-500 dark:hover:text-red-300"
                     >
-                      info@ascombuildcon.com
+                      info@ascombuild.com
+                    </a> <br />
+                    <a
+                      href="mailto:anjani@ascombuild.com"
+                      className="hover:text-red-500 dark:hover:text-red-300"
+                    >
+                      anjani@ascombuild.com
                     </a>
                   </p>
                 </div>

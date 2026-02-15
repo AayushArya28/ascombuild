@@ -17,21 +17,27 @@ const Hero = () => {
         <h1 className="text-white mb-4">
           ASCOM BUILDCON PVT. LTD.
         </h1>
-        <p className="mt-4 text-gray-200 max-w-3xl mx-auto">
-          Scientific Rehabilitation, Strengthening & Repair of Civil Infrastructure
+        <p className="mt-2 text-gray-300 text-sm uppercase tracking-wider">
+          Running by Ex IIT Professors and Alumnus
+        </p>
+        <p className="mt-4 text-gray-200 max-w-3xl mx-auto text-xl font-semibold">
+          Strengthen Bridges, Preserve Structural Lifelines, Minimize Demolition
+        </p>
+        <p className="mt-3 text-gray-300 max-w-3xl mx-auto">
+          Specialized structural engineering and construction consultancy dedicated to the scientific rehabilitation, strengthening, and repair of civil infrastructure across India
         </p>
         <p className="mt-2 text-gray-300 max-w-2xl mx-auto">
-          Headquartered in Varanasi, Uttar Pradesh - Delivering innovative, cost-effective structural solutions across India
+          Headquartered in Varanasi, Uttar Pradesh | Branch Office: Noida, NCR
         </p>
         <div className="mt-8 flex justify-center space-x-4">
           <a
-            href="#"
+            href="/projects"
             className="bg-red-600 text-white px-8 py-3 rounded-md text-lg font-medium hover:bg-red-700 transition-colors"
           >
             Our Projects
           </a>
           <a
-            href="#"
+            href="/contact-us"
             className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-md text-lg font-medium hover:bg-white hover:text-gray-900 transition-colors"
           >
             Contact Us

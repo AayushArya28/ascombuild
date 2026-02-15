@@ -96,7 +96,7 @@ const Stats = () => {
               </svg>
             </div>
             <h3 className="text-4xl font-bold text-red-600">
-              <CountUp end="21" suffix="+" />
+              <CountUp end="36" suffix="+" />
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mt-1">
               Years of Experience
@@ -119,10 +119,10 @@ const Stats = () => {
               </svg>
             </div>
             <h3 className="text-4xl font-bold text-red-600">
-              <CountUp end="2,500" suffix="+" />
+              <CountUp end="75" suffix="+" />
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mt-1">
-              Projects Completed
+              Major Projects
             </p>
           </div>
           <div className="text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
@@ -137,15 +137,15 @@ const Stats = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="1.5"
-                  d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                  d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
                 ></path>
               </svg>
             </div>
             <h3 className="text-4xl font-bold text-red-600">
-              <CountUp end="25" suffix="+" />
+              <CountUp end="12" suffix="+" />
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mt-1">
-              Awards
+              States Covered
             </p>
           </div>
           <div className="text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
@@ -160,15 +160,15 @@ const Stats = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="1.5"
-                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
                 ></path>
               </svg>
             </div>
             <h3 className="text-4xl font-bold text-red-600">
-              <CountUp end="100" suffix="+" />
+              <CountUp end="85" suffix="%" />
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mt-1">
-              Team Members
+              Client Retention
             </p>
           </div>
         </div>

@@ -1,6 +1,104 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+const teamMembers = [
+  {
+    name: "Dr. (Prof) Veerendra Kumar",
+    title: "Founder & Director",
+    image: "https://placehold.co/300x350?text=Dr.+Veerendra+Kumar",
+    credentials: "FIE, MICI, MISTE, FIGS, MIBC",
+    education: [
+      "B.Tech in Civil Engineering, IIT Kanpur (1979)",
+      "M.Tech in Structural Engineering, IIT Kanpur (1981)",
+      "Ph.D. in Structural Engineering, IIT (BHU) Varanasi (1987)"
+    ],
+    experience: "36+ years in academia and structural consultancy",
+    position: "Ex Head and Professor, Civil Engineering, IIT (BHU) Varanasi",
+    email: "vkumar@ascombuild.com",
+    highlights: [
+      "Published 75+ papers in ASCE and Scopus-indexed journals",
+      "Designed multiple buildings for BHU costing 500+ Crores",
+      "Structural consultant for Shree Kashi Vishwanath Corridor",
+      "Expert in transmission line tower foundation design"
+    ]
+  },
+  {
+    name: "Dr. Anjani Kumar Shukla",
+    title: "Managing Director",
+    image: "https://placehold.co/300x350?text=Dr.+Anjani+Kumar+Shukla",
+    credentials: "MASCE, MIE, MICI",
+    education: [
+      "Ph.D. in Structural Engineering, IIT (BHU) Varanasi",
+      "M.Tech. in Structural Engineering",
+      "B.Tech. in Civil Engineering"
+    ],
+    experience: "10+ years in retrofitting and consultancy",
+    specialization: "Structural rehabilitation and modern strengthening techniques",
+    email: "anjani@ascombuild.com",
+    mobile: "+91 9415 872 871",
+    highlights: [
+      "Research focus: Retrofitting and strengthening of damaged structures",
+      "Former VP at Mumbai-based multinational construction company",
+      "Published extensively in international peer-reviewed journals",
+      "Expert in structural assessment, testing, and rehabilitation"
+    ]
+  },
+  {
+    name: "Dr. Dheeresh Nayak",
+    title: "Design Expert",
+    image: "https://placehold.co/300x350?text=Dr.+Dheeresh+Nayak",
+    credentials: "Ph.D. IIT (BHU) Varanasi",
+    education: [
+      "Ph.D. in Structural Engineering, IIT (BHU) Varanasi",
+      "Specialization: Design of Structures"
+    ],
+    experience: "15+ years in design of steel and concrete structures",
+    specialization: "Structural design and analysis",
+    highlights: [
+      "Expert in design of bridges and buildings",
+      "Proficient in finite element analysis",
+      "Specialized in complex structural systems",
+      "Extensive experience in steel and concrete design"
+    ]
+  },
+  {
+    name: "Mr. Rajesh Ranjan Srivastava",
+    title: "Execution Expert",
+    image: "https://placehold.co/300x350?text=Rajesh+Srivastava",
+    credentials: "B.Tech Civil Engg, MBA (Executive) IIM Calcutta",
+    education: [
+      "B.Tech in Civil Engineering",
+      "MBA (Executive), IIM Calcutta"
+    ],
+    experience: "Extensive experience in project management and execution",
+    position: "Ex Engineer, UPJVNL (Govt Undertaking) OBRA",
+    specialization: "Project Management, Execution and strengthening of damaged structures",
+    highlights: [
+      "Expert in project management and delivery",
+      "Government sector experience",
+      "Specialized in execution of strengthening projects",
+      "Strong business acumen and operational expertise"
+    ]
+  },
+  {
+    name: "Mr. Raghavendra Kumar",
+    title: "Execution Expert",
+    image: "https://placehold.co/300x350?text=Raghavendra+Kumar",
+    credentials: "M.Tech. Structural Engineering",
+    education: [
+      "M.Tech. in Structural Engineering"
+    ],
+    experience: "Expert in project management and execution",
+    specialization: "Project Management, Execution and strengthening of damaged structures",
+    highlights: [
+      "Specialized in field execution",
+      "Expert in strengthening project delivery",
+      "Strong technical and management skills",
+      "Hands-on experience in rehabilitation projects"
+    ]
+  }
+];
+
 const Leadership = () => {
   return (
     <div className="bg-white dark:bg-gray-800 transition-colors duration-200 pt-20">
@@ -17,45 +115,100 @@ const Leadership = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mb-12">
-          <h2 className="text-xl md:text-2xl text-gray-500 font-medium mb-2">Our Team</h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8">Best & quality team members</h3>
+        <div className="mb-12 text-center">
+          <h2 className="text-xl md:text-2xl text-gray-500 dark:text-gray-400 font-medium mb-2">Our Team</h2>
+          <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            IIT Professors & Alumni Leading Innovation
+          </h3>
+          <p className="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            A unique collaboration between academic excellence from IIT (BHU) and practical field expertise, bringing together 36+ years of combined experience in structural engineering and rehabilitation.
+          </p>
         </div>
 
         <div className="grid gap-10 md:gap-12">
-          {/* Member 1 */}
-          <div className="flex flex-col md:flex-row gap-8 items-start bg-white dark:bg-gray-700 shadow-lg p-6 rounded-lg transition-all hover:-translate-y-1">
-            <div className="w-full md:w-1/3 lg:w-1/4">
-              <img src="https://placehold.co/300x350" alt="Dr. Veerendra Kumar" className="w-full h-auto object-cover rounded-md shadow-sm border border-gray-200" />
-            </div>
-            <div className="w-full md:w-2/3 lg:w-3/4">
-              <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">Dr. Veerendra Kumar</h4>
-              <p className="text-gray-500 dark:text-gray-300 font-medium mb-4">Director</p>
-              <div className="text-gray-600 dark:text-gray-300 space-y-2 text-sm md:text-base">
-                <p>Ex. Prof. Civil Engg. IIT BHU, Varanasi</p>
-                <p>FIE, MICI, MISTE, FIGS, MIBC</p>
-                <p>Email: vkumar@ascombuild.com</p>
-                <button className="text-red-600 hover:text-red-700 font-semibold mt-2">Read more...</button>
+          {teamMembers.map((member, index) => (
+            <div
+              key={index}
+              className="flex flex-col md:flex-row gap-8 items-start bg-white dark:bg-gray-700 shadow-lg p-6 rounded-lg transition-all hover:-translate-y-1"
+            >
+              <div className="w-full md:w-1/3 lg:w-1/4">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-auto object-cover rounded-md shadow-sm border border-gray-200"
+                />
               </div>
-            </div>
-          </div>
+              <div className="w-full md:w-2/3 lg:w-3/4">
+                <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">{member.name}</h4>
+                <p className="text-red-600 dark:text-red-400 font-medium mb-2">{member.title}</p>
 
-          {/* Member 2 */}
-          <div className="flex flex-col md:flex-row gap-8 items-start bg-white dark:bg-gray-700 shadow-lg p-6 rounded-lg transition-all hover:-translate-y-1">
-            <div className="w-full md:w-1/3 lg:w-1/4">
-              <img src="https://placehold.co/300x350" alt="Dr. Anjani Kumar Shukla" className="w-full h-auto object-cover rounded-md shadow-sm border border-gray-200" />
-            </div>
-            <div className="w-full md:w-2/3 lg:w-3/4">
-              <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">Dr. Anjani Kumar Shukla</h4>
-              <p className="text-gray-500 dark:text-gray-300 font-medium mb-4">Managing Director</p>
-              <div className="text-gray-600 dark:text-gray-300 space-y-2 text-sm md:text-base">
-                <p>Ph.D. IIT (BHU), Varanasi, Structural Engg</p>
-                <p>MASCE, MICI, MIEI</p>
-                <p>Email: anjani@ascombuild.com</p>
-                <button className="text-red-600 hover:text-red-700 font-semibold mt-2">Read more...</button>
+                {member.credentials && (
+                  <p className="text-gray-600 dark:text-gray-300 text-sm mb-3">
+                    {member.credentials}
+                  </p>
+                )}
+
+                <div className="text-gray-600 dark:text-gray-300 space-y-2 text-sm md:text-base">
+                  {member.position && (
+                    <p className="font-semibold">{member.position}</p>
+                  )}
+
+                  {member.education && (
+                    <div className="mt-2">
+                      <p className="font-semibold text-gray-800 dark:text-gray-200">Education:</p>
+                      <ul className="list-disc list-inside ml-2">
+                        {member.education.map((edu, i) => (
+                          <li key={i}>{edu}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {member.experience && (
+                    <p className="mt-2">
+                      <span className="font-semibold">Experience:</span> {member.experience}
+                    </p>
+                  )}
+
+                  {member.specialization && (
+                    <p className="mt-2">
+                      <span className="font-semibold">Specialization:</span> {member.specialization}
+                    </p>
+                  )}
+
+                  {member.highlights && (
+                    <div className="mt-3">
+                      <p className="font-semibold text-gray-800 dark:text-gray-200">Key Highlights:</p>
+                      <ul className="list-disc list-inside ml-2">
+                        {member.highlights.map((highlight, i) => (
+                          <li key={i} className="text-sm">{highlight}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  <div className="mt-4 flex flex-col gap-1">
+                    {member.email && (
+                      <p>
+                        <span className="font-semibold">Email:</span>{' '}
+                        <a href={`mailto:${member.email}`} className="text-red-600 hover:text-red-700">
+                          {member.email}
+                        </a>
+                      </p>
+                    )}
+                    {member.mobile && (
+                      <p>
+                        <span className="font-semibold">Mobile:</span>{' '}
+                        <a href={`tel:${member.mobile}`} className="text-red-600 hover:text-red-700">
+                          {member.mobile}
+                        </a>
+                      </p>
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
