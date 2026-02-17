@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="relative bg-gray-900 h-screen sm:h-[600px] flex items-center justify-center">
+    <div className="relative bg-gray-900 h-screen sm:h-150 flex items-center justify-center">
       {/* Background Image Placeholder */}
       <div className="absolute inset-0 overflow-hidden">
         <img

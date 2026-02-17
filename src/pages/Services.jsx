@@ -101,7 +101,7 @@ const Services = () => {
 
       {/* Services Introduction */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="bg-gradient-to-r from-red-50 to-gray-50 dark:from-gray-800 dark:to-gray-700 rounded-lg p-8 mb-12">
+        <div className="bg-linear-to-r from-red-50 to-gray-50 dark:from-gray-800 dark:to-gray-700 rounded-lg p-8 mb-12">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
             Specialized Expertise in Structural Rehabilitation
           </h2>
@@ -163,7 +163,7 @@ const Services = () => {
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Key Competencies</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="flex items-start">
-              <svg className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="h-6 w-6 text-green-500 mr-3 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
               </svg>
               <div>
@@ -172,7 +172,7 @@ const Services = () => {
               </div>
             </div>
             <div className="flex items-start">
-              <svg className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="h-6 w-6 text-green-500 mr-3 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
               </svg>
               <div>
@@ -181,7 +181,7 @@ const Services = () => {
               </div>
             </div>
             <div className="flex items-start">
-              <svg className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="h-6 w-6 text-green-500 mr-3 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
               </svg>
               <div>
@@ -190,7 +190,7 @@ const Services = () => {
               </div>
             </div>
             <div className="flex items-start">
-              <svg className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="h-6 w-6 text-green-500 mr-3 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
               </svg>
               <div>
@@ -199,7 +199,7 @@ const Services = () => {
               </div>
             </div>
             <div className="flex items-start">
-              <svg className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="h-6 w-6 text-green-500 mr-3 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
               </svg>
               <div>
@@ -208,7 +208,7 @@ const Services = () => {
               </div>
             </div>
             <div className="flex items-start">
-              <svg className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="h-6 w-6 text-green-500 mr-3 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
               </svg>
               <div>

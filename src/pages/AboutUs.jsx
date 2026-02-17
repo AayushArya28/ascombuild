@@ -102,7 +102,7 @@ const AboutUs = () => {
         </div>
 
         {/* Strategic Location */}
-        <div className="mt-12 bg-gradient-to-r from-red-50 to-gray-50 dark:from-gray-700 dark:to-gray-800 p-8 rounded-lg">
+        <div className="mt-12 bg-linear-to-r from-red-50 to-gray-50 dark:from-gray-700 dark:to-gray-800 p-8 rounded-lg">
           <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">Strategic Location</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-4">
             <strong>Headquarters:</strong> Varanasi, Uttar Pradesh - One of India's oldest and most architecturally significant cities, also Hon'ble Prime Minister's constituency and a rising economic hub.
@@ -117,31 +117,31 @@ const AboutUs = () => {
           <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">Growth & Expansion</h3>
           <ul className="space-y-3 text-gray-600 dark:text-gray-300">
             <li className="flex items-start">
-              <svg className="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="h-6 w-6 text-green-500 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
               </svg>
               Completed 75+ major projects across 12 states in India
             </li>
             <li className="flex items-start">
-              <svg className="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="h-6 w-6 text-green-500 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
               </svg>
               Worked with government agencies, quasi-government organizations, and private sector clients
             </li>
             <li className="flex items-start">
-              <svg className="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="h-6 w-6 text-green-500 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
               </svg>
               Established track record of on-time, on-budget project delivery
             </li>
             <li className="flex items-start">
-              <svg className="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="h-6 w-6 text-green-500 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
               </svg>
               Specialized expertise in bridge rehabilitation, hospital strengthening, and heritage restoration
             </li>
             <li className="flex items-start">
-              <svg className="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="h-6 w-6 text-green-500 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
               </svg>
               Maintained 85%+ client retention rate for repeat projects
