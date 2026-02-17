@@ -5,47 +5,47 @@ const testingServices = [
     {
         title: "Rebound hammer test",
         description: "Method is based on the principle that the rebound of an elastic mass depends on the hardness of the concrete surface against which the mass strikes. In other words, the amount of rebound... reading form the hammer will depend on the hardness of the concrete surface... which will then co-relate to the compressive strength of the concrete.",
-        placeholder: "Rebound Hammer Image"
+        image: "https://images.unsplash.com/photo-1535732820275-9ffd998cac22?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
         title: "Ultrasonic pulse velocity (UPV) test",
         description: "Is an in-situ, non-destructive test to check the quality of concrete. In this test, the strength and quality of concrete is assessed by measuring the velocity of an ultrasonic pulse passing through a concrete structure. higher UPV indicates better quality (density, uniformity, homogeneity etc).",
-        placeholder: "UPV Test Image"
+        image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
         title: "Half-cell potential",
         description: "Is the potential developed at the interface of a metal and an electrolyte. In Reinforced concrete structure this potential is used to indicate corrosion activity of the rebar. The potential difference between the reinforcing steel and a reference electrode is measured. The more negative the potential reading, the higher probability of corrosion activity.",
-        placeholder: "Half-cell Potential Image"
+        image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd90f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
         title: "Carbonation of concrete",
         description: "Is a process by which Carbon Dioxide from the air penetrates into the concrete and reacts with Calcium Hydroxide to form Calcium Carbonates. Carbonation itself does not directly damage concrete but it reduces alkalinity of concrete. High alkalinity is needed to protect steel from corrosion.",
-        placeholder: "Carbonation Test Image"
+        image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
         title: "Rebar mapping services",
         description: "Can determine rebar distribution, spacing and location (first and second layers), concrete cover thickness, overall concrete slab thickness, and detect any other features as void and etc in slab, post tension cables, metallic pipes etc.",
-        placeholder: "Rebar Mapping Image"
+        image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
         title: "Core tests",
         description: "Involve taking a cylindrical sample from the structure using a diamond core cutting bit and performing the core compressive loading machine. Core tests are conducted in conformance with the guidelines laid out in IS 516.",
-        placeholder: "Core Test Image"
+        image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
         title: "Pull out test",
         description: "Measures the force required to pull out a previously cast-in steel insert with an enlarged end clamped to the concrete. In this method, a metal rod/disk is pulled out and the force required is related to the compressive strength of concrete. This method is used to determine... bond strength of a coating or overlay material to the substrate or the tensile strength of a material... by measuring the adhesive force.",
-        placeholder: "Pull-out Test Image"
+        image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
         title: "Load test",
         description: "On structural members of RC structure is a prime importance. The structure is loaded... behavior of structural member (deflections, cracks etc) is studied. It is a physical load test. Linear potentiameters are placed below the slab and beams and reading for deflection are recorded as per the gradual increase in the loading.",
-        placeholder: "Load Test Image"
+        image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
         title: "Cut and Pull Out (CAPO)",
         description: "Is a reliable test method to determine in-situ compressive strength of concrete. The groove is recessed through the center hole... a diamond bit with a similar shape as a dental drill. Larger at the tip than at the base. The CAPO test results are found to be within 8% of the results obtained from conventional methods. The pull-force determines the compressive strength of in-situ concrete accurately.",
-        placeholder: "CAPO Test Image"
+        image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     }
 
 ]
@@ -65,8 +65,12 @@ const Testing = () => {
                         {testingServices.map((service, index) => (
                             <div key={index} className="flex flex-col md:flex-row gap-6 items-start">
                                 <div className="w-full md:w-48 shrink-0">
-                                    <div className="bg-gray-200 dark:bg-gray-700 rounded-lg h-32 w-full flex items-center justify-center text-xs text-center p-2 text-gray-500">
-                                        {service.placeholder}
+                                    <div className="bg-gray-200 dark:bg-gray-700 rounded-lg h-32 w-full overflow-hidden">
+                                        <img 
+                                            src={service.image} 
+                                            alt={service.title} 
+                                            className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300"
+                                        />
                                     </div>
                                 </div>
                                 <div>

@@ -1,5 +1,4 @@
 import React from "react";
-import heroImage from "../../assets/images/1.png";
 
 const Hero = () => {
   return (
@@ -7,7 +6,7 @@ const Hero = () => {
       {/* Background Image Placeholder */}
       <div className="absolute inset-0 overflow-hidden">
         <img
-          src={heroImage}
+          src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop"
           alt="Construction project"
           className="w-full h-full object-cover opacity-60"
         />

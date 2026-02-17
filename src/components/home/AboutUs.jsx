@@ -100,7 +100,7 @@ const AboutUs = () => {
               </li>
             </ul>
             <a
-              href="#"
+              href="/about-us"
               className="inline-block bg-red-600 text-white px-6 py-3 rounded-md font-medium hover:bg-red-700 transition-colors"
             >
               Read More

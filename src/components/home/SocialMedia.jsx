@@ -4,32 +4,32 @@ const videos = [
   {
     title: "Project Update 1",
     thumbnail:
-      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Safety Training",
     thumbnail:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Site Inspection",
     thumbnail:
-      "https://images.unsplash.com/photo-1590059598288-0382379f8c65?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1590059598288-0382379f8c65?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Client Testimonial",
     thumbnail:
-      "https://images.unsplash.com/photo-1545620932-d812db3522f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1545620932-d812db3522f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Annual Meet",
     thumbnail:
-      "https://images.unsplash.com/photo-1558494949-ef526bca4899?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1558494949-ef526bca4899?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "New Machinery",
     thumbnail:
-      "https://images.unsplash.com/photo-1615598585994-6e6bed1e204c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1615598585994-6e6bed1e204c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
   },
 ];
 

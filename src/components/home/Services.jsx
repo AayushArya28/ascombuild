@@ -1,20 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
     title: "Concrete Repairs",
     image:
-      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Structural Health Monitoring via Sensors",
     image:
-      "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Underwater Services",
     image:
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Retrofit Design",
@@ -24,12 +25,12 @@ const services = [
   {
     title: "Structural Strengthening",
     image:
-      "https://images.unsplash.com/photo-1535732820275-9ffd998cac22?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1590059598288-0382379f8c65?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Seismic Retrofit",
     image:
-      "https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "External Post Tensioning Systems",
@@ -39,7 +40,7 @@ const services = [
   {
     title: "Structural Steel Fabrication",
     image:
-      "https://images.unsplash.com/photo-1615598585994-6e6bed1e204c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
   },
 ];
 
@@ -67,12 +68,12 @@ const Services = () => {
           ))}
         </div>
         <div className="mt-12 text-center">
-          <a
-            href="#"
+          <Link
+            to="/services"
             className="inline-block bg-red-600 text-white px-6 py-2 rounded-md font-medium hover:bg-red-700 transition-colors"
           >
             Read All
-          </a>
+          </Link>
         </div>
       </div>
     </section>
