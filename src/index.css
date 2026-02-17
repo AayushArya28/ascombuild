@@ -1,9 +1,9 @@
 @import "tailwindcss";
 @config "../tailwind.config.js";
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   @apply bg-white dark:bg-gray-900 transition-colors duration-200 font-sans text-[20px] leading-[30px] font-medium;

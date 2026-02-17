@@ -21,10 +21,29 @@ const Footer = () => {
   }, [showScrollTop]);
 
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
+    // Custom smooth scroll implementation to ensure animation works consistently
+    const startPosition = window.pageYOffset;
+    const targetPosition = 0;
+    const distance = targetPosition - startPosition;
+    const duration = 800; // ms
+    let start = null;
+
+    const step = (timestamp) => {
+      if (!start) start = timestamp;
+      const progress = timestamp - start;
+      const percentage = Math.min(progress / duration, 1);
+      
+      // Easing function (easeOutQuart) for smooth finish
+      const ease = 1 - Math.pow(1 - percentage, 4);
+
+      window.scrollTo(0, startPosition + distance * ease);
+
+      if (progress < duration) {
+        window.requestAnimationFrame(step);
+      }
+    };
+
+    window.requestAnimationFrame(step);
   };
 
   return (
