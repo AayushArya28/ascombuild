@@ -29,6 +29,24 @@ h6 {
   @apply opacity-100 translate-y-0;
 }
 
+.hero-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.hero-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-delay-1 { transition-delay: 120ms; }
+.hero-delay-2 { transition-delay: 220ms; }
+.hero-delay-3 { transition-delay: 320ms; }
+.hero-delay-4 { transition-delay: 420ms; }
+.hero-delay-5 { transition-delay: 520ms; }
+.hero-delay-6 { transition-delay: 620ms; }
+
 /* Custom Scrollbar - Red & Black Theme */
 ::-webkit-scrollbar {
   width: 12px;
