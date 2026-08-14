@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import heroImage from "../assets/images/about-section.webp";
+import core1 from "../assets/images/core1.jpeg";
 
 const AboutUs = () => {
   return (
@@ -156,7 +157,7 @@ const AboutUs = () => {
           <div className="lg:w-1/4 flex flex-col items-center">
             <div className="bg-white p-2 shadow-lg rotate-2 transform hover:rotate-0 transition-transform duration-300 mb-4 border border-gray-200">
               <img
-                src="https://placehold.co/300x350?text=Dr.+Veerendra+Kumar"
+                src={core1}
                 alt="Dr. Veerendra Kumar"
                 className="w-full h-auto object-cover"
               />

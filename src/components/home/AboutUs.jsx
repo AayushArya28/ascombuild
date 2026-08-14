@@ -2,20 +2,20 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <section className="py-12 md:py-16 bg-white dark:bg-gray-900 transition-colors duration-200">
+    <section className="py-8 md:py-12 bg-white dark:bg-gray-900 transition-colors duration-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl">
-          <h2 className="font-bold text-gray-900 dark:text-white mb-6 relative inline-block">
+          <h2 className="font-bold text-gray-900 dark:text-white mb-4 relative inline-block">
             About Us
             <span className="absolute bottom-0 left-0 w-1/2 h-1 bg-red-600"></span>
           </h2>
-          <p className="text-gray-600 dark:text-gray-300 mb-4">
+          <p className="text-gray-600 dark:text-gray-300 mb-3">
             ASCOM BUILDCON Pvt Ltd is a specialized structural engineering and construction consultancy firm headquartered in Varanasi, Uttar Pradesh. Founded by Dr. (Prof) Veerendra Kumar, Ex Head and Professor of IIT (BHU) Varanasi, we are dedicated to the scientific rehabilitation, strengthening, and repair of civil infrastructure across India.
           </p>
-          <p className="text-gray-600 dark:text-gray-300 mb-6">
+          <p className="text-gray-600 dark:text-gray-300 mb-5">
             With a foundation built on academic excellence from IIT (BHU) and practical field expertise, ASCOM delivers innovative, cost-effective solutions that extend the operational lifespan of critical structures while ensuring public safety and preserving architectural heritage. Our core philosophy: <strong>Renascence of Structures Through Scientific Innovation</strong>.
           </p>
-          <ul className="space-y-3 mb-8">
+          <ul className="space-y-2.5 mb-6">
             <li className="flex items-center text-gray-700 dark:text-gray-300">
               <svg
                 className="h-5 w-5 text-green-500 mr-2"
